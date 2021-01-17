@@ -1,0 +1,132 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 paź 2020, 18:19:05
+    Author     : Konrad
+*/
+/*
+Pasek pobrany z https://startbootstrap.com/templates/simple-sidebar/
+*/
+#wrapper {
+    overflow-x: hidden;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+.sidebar-heading
+{
+    font-size: larger;
+    font-weight: bolder;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+@media (max-width: 768px) {
+  #sidebar-wrapper {
+    width: 100%;
+  }
+}
+
+    
+
+/*
+Własne
+*/
+.quickMenu
+{
+    margin-bottom: 2%;
+}
+.quickMenu a
+{
+  display:block;
+  height: 150px;
+  background-color: #ccff66;
+  color: #000;
+  text-decoration:none;
+}
+.quickMenu a:hover
+{
+    background-color: #99ff00;
+}
+.quickMenu p
+{
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.lookFor
+{
+    text-align: center;
+}
+.lookFor input
+    {
+        width: 100%;
+        text-align: center;
+        height: 50px;
+    }
+.alert_succes
+{
+    color: green;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.alert_failure
+{
+    color: red;
+    font-weight: bolder;
+    text-align: center;
+}
+table
+{
+        text-align: center;
+        width: 100%;
+        background-color: white;
+}
+
